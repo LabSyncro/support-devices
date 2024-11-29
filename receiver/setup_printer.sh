@@ -18,4 +18,6 @@ echo "Instlaling the printer driver ..."
 sudo dpkg -i XP_365B.deb || sudo apt --fix-broken install -y
 
 echo "Installing image processor ..."
-pip install Pillow
+sudo apt install python3-pillow
+sudo apt install python3-flask
+sudo apt install python-prcode
