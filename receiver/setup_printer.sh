@@ -20,4 +20,5 @@ sudo dpkg -i XP_365B.deb || sudo apt --fix-broken install -y
 echo "Installing image processor ..."
 sudo apt install python3-pillow
 sudo apt install python3-flask
-sudo apt install python-prcode
+sudo apt install python3-prcode
+sudo apt install python3-flask_cors

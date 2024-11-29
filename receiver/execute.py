@@ -4,9 +4,10 @@ import qrcode
 import math
 from flask import Flask, request, jsonify
 from PIL import Image, ImageDraw, ImageFont
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 # Set the temporary directory for saving images
 TEMP_DIR = "/tmp"
 
