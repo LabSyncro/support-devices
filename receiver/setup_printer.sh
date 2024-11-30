@@ -14,11 +14,10 @@ echo "Adding pi user to lpadmin group ..."\
 sudo usermod -a -G lpadmin pi
 
 echo "Instlaling the printer driver ..."
-# Navigate to current folder
 sudo dpkg -i XP_365B.deb || sudo apt --fix-broken install -y
 
-echo "Installing image processor ..."
+echo "Installing app ..."
 sudo apt install python3-pillow
 sudo apt install python3-flask
 sudo apt install python3-prcode
-sudo apt install python3-flask_cors
+sudo apt install python3-flask-cors
