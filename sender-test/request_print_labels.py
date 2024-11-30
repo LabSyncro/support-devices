@@ -31,7 +31,7 @@ def fetch_device_list():
     
 def forward_device_data_to_printer(device_list):
     """Forward the device data to the printer as a raw JSON file."""
-    printer_url = "https://dc03-171-252-153-91.ngrok-free.app/print_labels"  # Printer API endpoint
+    printer_url = "http://192.168.1.8:5000/print_labels"  # Printer API endpoint
 
     # Wrap the device list in a JSON object with the 'devices' key
     payload = {"devices": device_list}
