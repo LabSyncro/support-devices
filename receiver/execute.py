@@ -36,7 +36,7 @@ def save_image(image, path):
 
 def generateQR(url, size):
     """Generate a scalable QR code."""
-    qr = qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=10, border=1)
+    qr = qrcode.QRCode(version=2, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=10, border=1)
     qr.add_data(url)
     qr.make(fit=True)
     qr_image = qr.make_image(fill='black', back_color='white')
