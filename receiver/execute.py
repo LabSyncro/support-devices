@@ -136,7 +136,7 @@ def print_labels():
 
             # Generate & Add QR Code
             qr_image = generateQR(device['url'], QRCODE_SIZE)
-            label_image.paste(qr_image, (10, 20))
+            label_image.paste(qr_image, (10, 30))
 
             # Add text
             font = get_font_for_text(FONT_SIZE)

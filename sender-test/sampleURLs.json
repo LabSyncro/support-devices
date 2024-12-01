@@ -17,7 +17,7 @@
         },
         {
             "id": "12341234/1234",
-            "url": "https://youtu.be/123",
+            "url": "http://localhost:3000/devices/00000046?id=2cbc",
             "name": "Lana Del Rey, album No1 with a long list of text like this hello baby"
         }
     ]
