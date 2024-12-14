@@ -3,7 +3,7 @@ import json
 
 def fetch_device_list():
     """Fetch the list of devices from the API."""
-    url = "http://localhost:5000/api/get_device_list"  # URL of the Flask API
+    url = "http://localhost:5001/api/get_device_list"  # URL of the Flask API
     try:
         # Send GET request to fetch the JSON data
         response = requests.get(url)
@@ -31,7 +31,7 @@ def fetch_device_list():
     
 def forward_device_data_to_printer(device_list):
     """Forward the device data to the printer as a raw JSON file."""
-    printer_url = "http://192.168.1.8:5000/print_labels"  # Printer API endpoint
+    printer_url = "http://192.168.1.99:5000/print_labels"  # Printer API endpoint
 
     # Wrap the device list in a JSON object with the 'devices' key
     payload = {"devices": device_list}
