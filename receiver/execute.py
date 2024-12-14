@@ -18,7 +18,7 @@ VERTICAL_GAP = int(0.37 * DPI)
 HORIZONTAL_GAP = int(0.2 * DPI)
 LEFT_MARGIN = int(0 * DPI)
 RIGHT_MARGIN = int(0 * DPI)
-TOP_MARGIN = 90
+TOP_MARGIN = 0
 BOTTOM_MARGIN = 0
 
 INDIVIDUAL_LABEL_WIDTH = int(3.5 * DPI)                             # 3.5cm per label width
